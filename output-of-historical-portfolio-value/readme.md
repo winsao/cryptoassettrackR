@@ -1,0 +1,1 @@
+For each portfolio valuation, portfolio valuation data is saved in this folder as .csv. Downloaded data is ignored via .gitignore.
