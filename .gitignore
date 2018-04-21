@@ -1,0 +1,14 @@
+# files ignored via:
+
+## file-name
+portfolio.private.R
+README.html
+*.cryptowatch.data.csv
+*.portfolio.value.csv
+
+## folder name
+/.Rproj.user/
+
+## file type
+*.Rhistory
+*.Rproj
