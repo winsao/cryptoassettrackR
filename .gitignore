@@ -7,7 +7,7 @@ README.html
 *.portfolio.value.csv
 
 ## folder name
-/.Rproj.user/
+.Rproj.user
 
 ## file type
 *.Rhistory
