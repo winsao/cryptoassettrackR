@@ -16,7 +16,6 @@ list.install.and.load.required.packages.f(error.in.tor.config)
 
 use.portfolio.private <- FALSE  # TRUE or FALSE
 portfolio <- select.portfolio.f(use.portfolio.private)
-
 portfolio <- create.pair.lookup.f(portfolio)
 
 # USER INPUT: Enter TRUE to see exchange options for assets above ---------
@@ -27,5 +26,5 @@ portfolio <- calculate.portfolio.valuation.f(portfolio, fiat.base)
 
 # When the above settings and portfolio ("portfolio.sample.R" or 
 # "portfolio.sample.R") are configured as you'd like, run this entire file
-# with ctrl+a (select all) and then ctrl+r (run all selected). Or, open
+# with ctrl+a (select all) and then ctrl+enter (run all selected). Or, open
 # master.R and select and run source("configuration.R")
