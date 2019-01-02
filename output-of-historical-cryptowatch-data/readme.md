@@ -1,1 +1,1 @@
-For each portfolio valuation, downloaded Cryptowatch data is saved in this folder as .csv. Downloaded data is ignored via .gitignore.
+For each portfolio valuation, downloaded Cryptowatch data is saved in this folder as `.csv`. Downloaded data is ignored via `.gitignore`.
