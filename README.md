@@ -1,40 +1,40 @@
 # `cryptoassettrackR`
 
 ### Purpose
-`cryptoassettrackR` allows a user to obtain the current value of a cryptoasset portfolio specified by the user. Unlike mobile apps and cloud spreadsheet solutions, no private portfolio data is provided to third parties, and the bulk price data download can be performed through Tor. Asset values are displayed in user's selected fiat currency as well as in $BTC and $ETH.
+`cryptoassettrackR` allows a user to obtain the current value of a cryptoasset portfolio specified by the user. Unlike mobile apps and cloud spreadsheets, no private portfolio data is provided to third parties, and the bulk price data download can be performed through Tor. Asset values are displayed in user's selected fiat currency as well as in $BTC and $ETH.
 
 ### Price Data
 [Cryptowatch](https://cryptowat.ch) provides a general use public market REST API detailed [here](https://cryptowat.ch/docs/api).  
 
 The `get.cryptowatch.data.f` function obtains [all current Cryptowatch pricing data](https://api.cryptowat.ch/markets/summaries) and returns the data in a "long" format.
 
-Based on the user's desired portfolio (as specified in `portfolio.sample.R` or `portfolio.private.R`, the latter of which is ignored via `.gitignore` for user/contributor privacy), the values required to compute the latest portfolio value are extracted from the long Cryptowatch data. A summary of the portfolio value is then displayed in a nicely formatted table.
+Based on user's desired portfolio (as specified in `portfolio.sample.R` or `portfolio.private.R`, the latter of which is ignored via `.gitignore` for privacy), the values required to compute the latest portfolio value are extracted from the downloaded Cryptowatch data. A summary of the portfolio value is then displayed in a nicely formatted table.
 
 ## Getting Started
 
 ### System Requirements
-`cryptoassettrackR` runs on Linux, Mac OS X, and Windows with the `R` programming language installed.
+`cryptoassettrackR` runs on GNU/Linux, macOS (f.k.a. Mac OS X), and Windows with the `R` programming language installed.
 
 ### Required: R programming language
-##### Linux
+##### GNU/Linux
 https://cran.r-project.org/bin/linux/  
 (`R` is also available through official Debian and Ubuntu package repositories)
 
-##### Mac OS X
+##### macOS
 https://cran.r-project.org/bin/macosx/
 
 ##### Windows 
 https://cran.r-project.org/bin/windows/
 
 ### Recommended: RStudio Desktop
-RStudio installers for Linux, Mac OS X, and Windows are available here:  
+RStudio installers for GNU/Linux, macOS, and Windows are available here:  
 https://www.rstudio.com/products/rstudio/download/#download  
 
-To validate RStudio's Linux builds, the RStudio code signing public key (info@rstudio.com, key ID: E331692F) is available here:  
+To validate RStudio's GNU/Linux builds, the RStudio code signing public key (info@rstudio.com, key ID: E331692F) is available here:  
 https://www.rstudio.com/code-signing/
 
 ### Recommended: Tor Browser
-Tor Browser installers for Linux, Mac OS X, and Windows are available here:  
+Tor Browser installers for GNU/Linux, macOS, and Windows are available here:  
 https://www.torproject.org/download/download.html.en  
 
 Beneath each download button is a link named "sig" to download the `.asc` digital signature for each file. When verifying your download with the associated `.asc` file, it should indicate signing by a Tor developer key listed here:  
