@@ -8,6 +8,6 @@ list.install.and.load.required.packages.f <- function(
 	} else {
   packages.to.load.t <- list.files(path="functions/library", full.names=F)
   packages.to.load.t <- gsub(".R", "", packages.to.load.t, fixed=T)
-  lapply(packages.to.load.t, package.check.f)
+  suppressMessages(lapply(packages.to.load.t, package.check.f))
   }
 }
