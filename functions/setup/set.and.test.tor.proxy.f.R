@@ -17,7 +17,8 @@ set.and.test.tor.proxy.f <-  function (
   # Check Tor status with torproject.org  
     tor.check.result.t <- readLines("https://check.torproject.org/")
     tor.status.t <- tor.check.result.t[8]
-    ip.t <- tor.check.result.t[269]
+    ip.address.lookup <- grep("IP address", tor.check.result.t, fixed=T)
+    ip.t <- tor.check.result.t[ip.address.lookup]
     ip.t <- gsub("  <p>Your IP address appears to be:  <strong>", "", ip.t)
     ip.t <- gsub("</strong></p>", "", ip.t)
   if (grepl("Congratulations", tor.status.t)) {
